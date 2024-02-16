@@ -27,21 +27,16 @@ void bubbleSort(int arr[], int n) {
 int main() {
     int arr[] = {93, 52, 72, 42, 3, 63, 100, 19, 61, 44, 21, 98, 6, 41, 78, 5, 51, 60, 67, 11};
     int n = sizeof(arr) / sizeof(arr[0]);
-    
-    // Print the original array
-    printf("Original array: ");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    
+   
     // Sort the array using Bubble Sort
     bubbleSort(arr, n);
-    
+   
     // Print the sorted array
-    printf("\nSorted array: ");
+    printf("The sorted array is: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
-    
+    printf("\n"); // Add a new line at the end of the output
+   
     return 0;
 }
