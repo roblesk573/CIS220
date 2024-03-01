@@ -74,7 +74,7 @@ int main() {
 
     Stack *stack = createStack(allocationSize); // Create a new stack with given allocation size
 
-    // Test scenario following provided instructions
+    // Test scenario 
     if (push(stack, 1)) printf("Item 1 was pushed successfully\n");
     if (push(stack, 2)) printf("Item 2 was pushed successfully\n");
     printf("The top item on the stack is: %d\n", peek(stack));
@@ -104,7 +104,7 @@ int main() {
     printf("The item popped from the stack was %d\n", pop(stack));
     printf("The stack is empty: %s\n", isEmpty(stack) ? "true" : "false");
 
-    // Clean up: free allocated memory
+    // Free allocated memory
     free(stack->items);
     free(stack);
 
